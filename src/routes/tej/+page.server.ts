@@ -11,9 +11,9 @@ export const actions = {
 		const url = dbData?.[0]?.url;
 		if (!url) return;
 
-		const { data: updateData } = await supabase.from('links').update({ email }).eq('url', url);
+		const { error } = await supabase.from('links').update({ email }).eq('url', url);
+		if (error) return;
 
-		console.log(url, updateData);
 		throw redirect(301, `${url}?address=${email}`);
 	}
 } satisfies Actions;

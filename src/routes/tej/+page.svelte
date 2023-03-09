@@ -3,6 +3,10 @@
 	import logo from '$lib/images/logo.jpg';
 </script>
 
+<svelte:head>
+	<title>DOMINGO Tejfakasztó Debütkoncert POAP</title>
+</svelte:head>
+
 <section class="bg-[#423f3f] md:rounded-2xl md:mt-14 overflow-hidden">
 	<img src={banner} />
 	<div class="relative w-full flex justify-center items-center mb-14">
