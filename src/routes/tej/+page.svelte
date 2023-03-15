@@ -30,21 +30,25 @@
 			<i> Mint </i>
 			gombra nyomj, amit <b>holnap estig tehetsz meg</b>. A továbbiakról szólni fogunk 🖖🏻
 		</p>
-		<form method="POST" class="inline-block flex items-end pb-8">
+		<div class="inline-block flex items-end pb-8 opacity-25">
 			<label class="w-full"
 				><!-- Add meg az emailed! -->
 				<input
 					required
+					disabled
 					type="email"
 					name="email"
 					placeholder="jofejvagyok@gmail.com"
 					class="rounded-lg block h-12  mt-1 w-full bg-[#282727] border-[#3f3e3e]"
 				/>
 			</label>
-			<button class="rounded-lg px-5 h-12 bg-[#927470] ml-2 font-[Anton] text-[#E1D5CA]"
+			<button disabled class="rounded-lg px-5 h-12 bg-[#927470] ml-2 font-[Anton] text-[#E1D5CA]"
 				>Mehet</button
 			>
-		</form>
+		</div>
+		<p class="text-center mb-10 font-normal text-[#E1D5CA] font-[Manrope]">
+			A claimelés lejárt. Ha ott voltál de lemaradtál, küldd el nekünk a jegyed Instagramon!
+		</p>
 	</div>
 </section>
 <p class="text-center  font-normal text-[#5c5c5c] font-[Manrope] py-8">
