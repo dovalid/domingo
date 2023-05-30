@@ -7,7 +7,12 @@ export const actions = {
 		const data = await request.formData();
 		const email = data.get('email');
 
-		const { data: dbData } = await supabase.from('links').select('url').is('email', null).limit(1);
+		const { data: dbData } = await supabase
+			.from('links')
+			.select('url')
+			.eq('poap', 'tejpolo')
+			.is('email', null)
+			.limit(1);
 		const url = dbData?.[0]?.url;
 		if (!url) return;
 
